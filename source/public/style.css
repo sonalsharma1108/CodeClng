@@ -1,0 +1,20 @@
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.legend{
+    font-size: 24px;
+    padding: 10px;
+    background-color: lavender;
+    color: #39424e;
+}
+
+.MuiAppBar-colorPrimary-10{
+    background-color: #39424e !important;
+}
+
+.logo {
+    font-size: 35px;
+    padding-right: 10px;
+    vertical-align: baseline;
+}
