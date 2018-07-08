@@ -18,3 +18,7 @@
     padding-right: 10px;
     vertical-align: baseline;
 }
+
+.btn-white{
+    color: white !important;
+}

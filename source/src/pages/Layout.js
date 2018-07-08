@@ -9,7 +9,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Button from '@material-ui/core/Button';
-import HistoryComponent from './history';
+import { Link } from 'react-router-dom';
 
 const styles = {
   root: {
@@ -24,7 +24,7 @@ const styles = {
   },
 };
 
-class MenuAppBar extends React.Component {
+class Layout extends React.Component {
   state = {
     auth: true,
     anchorEl: null,
@@ -59,7 +59,7 @@ class MenuAppBar extends React.Component {
             <Typography variant="title" color="inherit" className={[classes.flex, classes.middle]}>
               <span className="logo">{"{C}"}</span>  CodeChallenge
             </Typography>
-            <Button color="inherit">Dashboard</Button>
+            <Link to="dashboard" className="btn" ><Button className="btn-white">Dashboard</Button></Link>
             {auth && (
               <div>
                 <IconButton
@@ -86,9 +86,7 @@ class MenuAppBar extends React.Component {
                 >
                   <MenuItem onClick={this.handleClose}>My account</MenuItem>
                   <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={() => { this.state.clicked && <HistoryComponent /> }
-
-                  }>History</MenuItem>
+                  <Link to="history"><MenuItem onClick={this.handleClose}>History</MenuItem></Link>
                 </Menu>
               </div>
             )}
@@ -99,8 +97,8 @@ class MenuAppBar extends React.Component {
   }
 }
 
-MenuAppBar.propTypes = {
+Layout.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MenuAppBar);
+export default withStyles(styles)(Layout);

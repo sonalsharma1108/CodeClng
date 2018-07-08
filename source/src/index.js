@@ -1,20 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MenuAppBar from './AppBar';
-import SimpleExpansionPanel from './QuestionPanel';
 
-ReactDOM.render(<div>
-    <MenuAppBar />
-    <div className="margin-top-50">
-        <div className="container">
-            <div className="row legend">
-                <span>Challenges</span>
-            </div>
-            <div className="row">
-                <SimpleExpansionPanel />
-            </div>
-        </div>
-    </div>
-</div>, document.getElementById('root'));
+import {
+    BrowserRouter,
+    Route,
+    Switch
+} from 'react-router-dom'
 
+import Layout from './pages/Layout';
+import Dashboard from './pages/dashboard';
+import Challenge from './pages/challenge';
+import History from './pages/history';
+
+const app = document.getElementById('root');
+
+ReactDOM.render(
+    <BrowserRouter>
+        <switch>
+            <Route path="/" render={props => <Layout {...props} />} />
+            <Route path="/dashboard" render={props => <Dashboard {...props} />} />
+            <Route path="/challenge" render={props => <Challenge {...props} />} />
+            <Route path="/history" render={props => <History {...props} />} />
+        </switch>
+    </BrowserRouter>,
+    app);
 
