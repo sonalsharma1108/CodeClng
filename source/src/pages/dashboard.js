@@ -6,7 +6,6 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
 const styles = theme => ({
@@ -57,7 +56,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                             <ExpansionPanel>
@@ -71,7 +70,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                             <ExpansionPanel>
@@ -85,7 +84,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                             <ExpansionPanel>
@@ -99,7 +98,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                             <ExpansionPanel>
@@ -113,7 +112,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                             <ExpansionPanel>
@@ -127,7 +126,7 @@ class Dashboard extends React.Component {
           </Typography>
                                 </ExpansionPanelDetails>
                                 <div class="float-right my-2 mr-3">
-                                    <button type="button" className="btn btn-outline-success">Start</button>
+                                <Link to="challenge" ><button type="button" className="btn btn-outline-success">Start</button></Link>
                                 </div>
                             </ExpansionPanel>
                         </div>

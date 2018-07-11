@@ -84,8 +84,8 @@ class Layout extends React.Component {
                   open={open}
                   onClose={this.handleClose}
                 >
-                  <MenuItem onClick={this.handleClose}>My account</MenuItem>
-                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
+                  <Link to="myaccount"><MenuItem onClick={this.handleClose}>My Account</MenuItem></Link>
+                  <Link to="profile"><MenuItem onClick={this.handleClose}>Profile</MenuItem></Link>
                   <Link to="history"><MenuItem onClick={this.handleClose}>History</MenuItem></Link>
                 </Menu>
               </div>
